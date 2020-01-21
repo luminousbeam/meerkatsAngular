@@ -1,0 +1,9 @@
+<h2>All the Meerkats</h2>
+<ul *ngFor='let meerkat of meerkats'>
+    <li>{{meerkat.name}}
+        <button (click)='onClickColor([meerkat.name])'>Get Fave Color</button>
+    </li>
+</ul>
+
+
+<p *ngIf='display'>{{meerkat}}'s favorite color is {{color}}!</p>
